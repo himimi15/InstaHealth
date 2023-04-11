@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D679DBA029E4F72900F6847A /* InstaHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679DB9F29E4F72900F6847A /* InstaHealthApp.swift */; };
+		D679DBA229E4F72900F6847A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679DBA129E4F72900F6847A /* ContentView.swift */; };
+		D679DBA429E4F72B00F6847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D679DBA329E4F72B00F6847A /* Assets.xcassets */; };
+		D679DBA729E4F72B00F6847A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D679DBA629E4F72B00F6847A /* Preview Assets.xcassets */; };
+		D679DBB129E4F72B00F6847A /* InstaHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679DBB029E4F72B00F6847A /* InstaHealthTests.swift */; };
+		D679DBBB29E4F72B00F6847A /* InstaHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679DBBA29E4F72B00F6847A /* InstaHealthUITests.swift */; };
+		D679DBBD29E4F72B00F6847A /* InstaHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D679DBBC29E4F72B00F6847A /* InstaHealthUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D679DBAD29E4F72B00F6847A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D679DB9429E4F72900F6847A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D679DB9B29E4F72900F6847A;
+			remoteInfo = InstaHealth;
+		};
+		D679DBB729E4F72B00F6847A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D679DB9429E4F72900F6847A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D679DB9B29E4F72900F6847A;
+			remoteInfo = InstaHealth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D679DB9C29E4F72900F6847A /* InstaHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D679DB9F29E4F72900F6847A /* InstaHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaHealthApp.swift; sourceTree = "<group>"; };
+		D679DBA129E4F72900F6847A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D679DBA329E4F72B00F6847A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D679DBA629E4F72B00F6847A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D679DBAC29E4F72B00F6847A /* InstaHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D679DBB029E4F72B00F6847A /* InstaHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaHealthTests.swift; sourceTree = "<group>"; };
+		D679DBB629E4F72B00F6847A /* InstaHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D679DBBA29E4F72B00F6847A /* InstaHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaHealthUITests.swift; sourceTree = "<group>"; };
+		D679DBBC29E4F72B00F6847A /* InstaHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D679DB9929E4F72900F6847A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D679DBA929E4F72B00F6847A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D679DBB329E4F72B00F6847A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D679DB9329E4F72900F6847A = {
+			isa = PBXGroup;
+			children = (
+				D679DB9E29E4F72900F6847A /* InstaHealth */,
+				D679DBAF29E4F72B00F6847A /* InstaHealthTests */,
+				D679DBB929E4F72B00F6847A /* InstaHealthUITests */,
+				D679DB9D29E4F72900F6847A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D679DB9D29E4F72900F6847A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D679DB9C29E4F72900F6847A /* InstaHealth.app */,
+				D679DBAC29E4F72B00F6847A /* InstaHealthTests.xctest */,
+				D679DBB629E4F72B00F6847A /* InstaHealthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D679DB9E29E4F72900F6847A /* InstaHealth */ = {
+			isa = PBXGroup;
+			children = (
+				D679DB9F29E4F72900F6847A /* InstaHealthApp.swift */,
+				D679DBA129E4F72900F6847A /* ContentView.swift */,
+				D679DBA329E4F72B00F6847A /* Assets.xcassets */,
+				D679DBA529E4F72B00F6847A /* Preview Content */,
+			);
+			path = InstaHealth;
+			sourceTree = "<group>";
+		};
+		D679DBA529E4F72B00F6847A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D679DBA629E4F72B00F6847A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D679DBAF29E4F72B00F6847A /* InstaHealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				D679DBB029E4F72B00F6847A /* InstaHealthTests.swift */,
+			);
+			path = InstaHealthTests;
+			sourceTree = "<group>";
+		};
+		D679DBB929E4F72B00F6847A /* InstaHealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D679DBBA29E4F72B00F6847A /* InstaHealthUITests.swift */,
+				D679DBBC29E4F72B00F6847A /* InstaHealthUITestsLaunchTests.swift */,
+			);
+			path = InstaHealthUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D679DB9B29E4F72900F6847A /* InstaHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D679DBC029E4F72B00F6847A /* Build configuration list for PBXNativeTarget "InstaHealth" */;
+			buildPhases = (
+				D679DB9829E4F72900F6847A /* Sources */,
+				D679DB9929E4F72900F6847A /* Frameworks */,
+				D679DB9A29E4F72900F6847A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaHealth;
+			productName = InstaHealth;
+			productReference = D679DB9C29E4F72900F6847A /* InstaHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D679DBAB29E4F72B00F6847A /* InstaHealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D679DBC329E4F72B00F6847A /* Build configuration list for PBXNativeTarget "InstaHealthTests" */;
+			buildPhases = (
+				D679DBA829E4F72B00F6847A /* Sources */,
+				D679DBA929E4F72B00F6847A /* Frameworks */,
+				D679DBAA29E4F72B00F6847A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D679DBAE29E4F72B00F6847A /* PBXTargetDependency */,
+			);
+			name = InstaHealthTests;
+			productName = InstaHealthTests;
+			productReference = D679DBAC29E4F72B00F6847A /* InstaHealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D679DBB529E4F72B00F6847A /* InstaHealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D679DBC629E4F72B00F6847A /* Build configuration list for PBXNativeTarget "InstaHealthUITests" */;
+			buildPhases = (
+				D679DBB229E4F72B00F6847A /* Sources */,
+				D679DBB329E4F72B00F6847A /* Frameworks */,
+				D679DBB429E4F72B00F6847A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D679DBB829E4F72B00F6847A /* PBXTargetDependency */,
+			);
+			name = InstaHealthUITests;
+			productName = InstaHealthUITests;
+			productReference = D679DBB629E4F72B00F6847A /* InstaHealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D679DB9429E4F72900F6847A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D679DB9B29E4F72900F6847A = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					D679DBAB29E4F72B00F6847A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = D679DB9B29E4F72900F6847A;
+					};
+					D679DBB529E4F72B00F6847A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = D679DB9B29E4F72900F6847A;
+					};
+				};
+			};
+			buildConfigurationList = D679DB9729E4F72900F6847A /* Build configuration list for PBXProject "InstaHealth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D679DB9329E4F72900F6847A;
+			productRefGroup = D679DB9D29E4F72900F6847A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D679DB9B29E4F72900F6847A /* InstaHealth */,
+				D679DBAB29E4F72B00F6847A /* InstaHealthTests */,
+				D679DBB529E4F72B00F6847A /* InstaHealthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D679DB9A29E4F72900F6847A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D679DBA729E4F72B00F6847A /* Preview Assets.xcassets in Resources */,
+				D679DBA429E4F72B00F6847A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D679DBAA29E4F72B00F6847A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D679DBB429E4F72B00F6847A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D679DB9829E4F72900F6847A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D679DBA229E4F72900F6847A /* ContentView.swift in Sources */,
+				D679DBA029E4F72900F6847A /* InstaHealthApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D679DBA829E4F72B00F6847A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D679DBB129E4F72B00F6847A /* InstaHealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D679DBB229E4F72B00F6847A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D679DBBD29E4F72B00F6847A /* InstaHealthUITestsLaunchTests.swift in Sources */,
+				D679DBBB29E4F72B00F6847A /* InstaHealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D679DBAE29E4F72B00F6847A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D679DB9B29E4F72900F6847A /* InstaHealth */;
+			targetProxy = D679DBAD29E4F72B00F6847A /* PBXContainerItemProxy */;
+		};
+		D679DBB829E4F72B00F6847A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D679DB9B29E4F72900F6847A /* InstaHealth */;
+			targetProxy = D679DBB729E4F72B00F6847A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D679DBBE29E4F72B00F6847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D679DBBF29E4F72B00F6847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D679DBC129E4F72B00F6847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InstaHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = QW2CY7WS4X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instaHealth.InstaHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D679DBC229E4F72B00F6847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InstaHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = QW2CY7WS4X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instaHealth.InstaHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D679DBC429E4F72B00F6847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QW2CY7WS4X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instaHealth.InstaHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaHealth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InstaHealth";
+			};
+			name = Debug;
+		};
+		D679DBC529E4F72B00F6847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QW2CY7WS4X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instaHealth.InstaHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaHealth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InstaHealth";
+			};
+			name = Release;
+		};
+		D679DBC729E4F72B00F6847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QW2CY7WS4X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instaHealth.InstaHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaHealth;
+			};
+			name = Debug;
+		};
+		D679DBC829E4F72B00F6847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QW2CY7WS4X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.instaHealth.InstaHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaHealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D679DB9729E4F72900F6847A /* Build configuration list for PBXProject "InstaHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D679DBBE29E4F72B00F6847A /* Debug */,
+				D679DBBF29E4F72B00F6847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D679DBC029E4F72B00F6847A /* Build configuration list for PBXNativeTarget "InstaHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D679DBC129E4F72B00F6847A /* Debug */,
+				D679DBC229E4F72B00F6847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D679DBC329E4F72B00F6847A /* Build configuration list for PBXNativeTarget "InstaHealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D679DBC429E4F72B00F6847A /* Debug */,
+				D679DBC529E4F72B00F6847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D679DBC629E4F72B00F6847A /* Build configuration list for PBXNativeTarget "InstaHealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D679DBC729E4F72B00F6847A /* Debug */,
+				D679DBC829E4F72B00F6847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D679DB9429E4F72900F6847A /* Project object */;
+}

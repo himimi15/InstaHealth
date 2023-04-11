@@ -11,28 +11,21 @@ import Foundation
 
 struct SearchView: View {
     @StateObject var locationManager: LocationManager = .init()
-    // navigation tag to push view to mapview
-    @State var navigationTag: String?
+    // Location manager state object to handle location-related functionality
+    @State var navigationTag: String?   // navigation tag to push view to mapview
     
     var body: some View {
         VStack{
             HStack(spacing: 15) {
-                /*
-                Button {
-                } label: {
-                    Image(systemName: "chevron.left")
-                        .font(.title3)
-                        .foregroundColor(.primary)
-                }*/
                 
-                Text("Search Location")
+                Text("Search Location") // Title for the search view
                     .font(.title3)
                     .fontWeight(.semibold)
             }
             .frame(maxWidth: .infinity,alignment: .leading)
             
             HStack(spacing: 10) {
-                Image(systemName: "magnifyingglass")
+                Image(systemName: "magnifyingglass")    // Magnifying glass icon
                     .foregroundColor(.gray)
                 
                 TextField("Find locations here", text: $locationManager.searchText)
@@ -50,13 +43,17 @@ struct SearchView: View {
                     ForEach(places, id: \.self) {place in
                         Button {
                             if let coordinate = place.location?.coordinate{
+                                // Update pickedLocation in the location manager
                                 locationManager.pickedLocation = .init(latitude: coordinate.latitude, longitude: coordinate.longitude)
+                                // Update map region to show selected location
                                 locationManager.mapView.region = .init(center: coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+                                // Add draggable pin on the map
                                 locationManager.addDraggablePin(coordinate: coordinate)
+                                // Update placemark information for the selected location
                                 locationManager.updatePlacemark(location: .init(latitude: coordinate.latitude, longitude: coordinate.longitude))
                             }
                             
-                            // navigating to MapView
+                            // Trigger navigation to MapView
                             navigationTag = "MAPVIEW"
                             
                         } label: {
@@ -126,17 +123,19 @@ struct SearchView_Previews: PreviewProvider {
 
 // MapView Live Selection
 struct MapViewSelection: View{
+    // The LocationManager object that manages location-related functionalities in the app.
     @EnvironmentObject var locationManager: LocationManager
+    // The dismiss action to dismiss the current view, retrieved from the environment.
     @Environment(\.dismiss) var dismiss
     
     var body: some View{
         ZStack{
             MapViewHelper()
-                .environmentObject(locationManager)
+            // Passes the locationManager object to the MapViewHelper view as an environment object
+                .environmentObject(locationManager) 
                 .ignoresSafeArea()
             
             Button {
-                
                 dismiss()
             } label: {
                 Image(systemName: "chevron.left")
@@ -170,9 +169,11 @@ struct MapViewSelection: View{
                     .frame(maxWidth: .infinity,alignment: .leading)
                     .padding(.vertical,10)
                     
+                    // A button that triggers a function to send a POST request with the selected place data when tapped
                     Button {
                         let payload = locationManager.finalPayload
                         sendPOSTRequest(payload: payload)
+                        // Calls a function to send a POST request with the payload data.
                     } label: {
                         Text("Add Your Clinic")
                             .fontWeight(.semibold)
@@ -218,6 +219,9 @@ struct MapViewHelper: UIViewRepresentable{
     func updateUIView(_ uiView: MKMapView, context: Context) {}
 }
 
+/// Sends a POST request with the given payload to the specified URL.
+/// - Parameters:
+///   - payload: The payload to be sent as JSON data in the request body. Can be nil.
 func sendPOSTRequest(payload: [String: String]?) {
     let urlString = "https://sandbox.demo.sainahealth.com/api/HealthProviders/CreateHealthProvider"
     let url = URL(string: urlString)!
@@ -227,7 +231,8 @@ func sendPOSTRequest(payload: [String: String]?) {
     request.setValue("application/json-patch+json", forHTTPHeaderField: "Content-Type")
     
     do {
-        let jsonData = try JSONSerialization.data(withJSONObject: payload ?? <#default value#>, options: .prettyPrinted)
+        // Serialize the payload as JSON data
+        let jsonData = try JSONSerialization.data(withJSONObject: payload ?? [:], options: .prettyPrinted)
         request.httpBody = jsonData
     } catch {
         print("Error serializing payload: \(error.localizedDescription)")
@@ -241,9 +246,11 @@ func sendPOSTRequest(payload: [String: String]?) {
         }
         
         if let data = data {
+            // Try to parse the response data as JSON
             if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                 print("Response: \(json)")
             } else {
+                // If not valid JSON, print the response as a string
                 let responseString = String(data: data, encoding: .utf8)
                 print("Response: \(responseString ?? "")")
             }
@@ -252,6 +259,7 @@ func sendPOSTRequest(payload: [String: String]?) {
     task.resume()
 }
 
+// test POST request
 /*
 func sendGETRequest() {
     let urlString = "https://sandbox.demo.sainahealth.com/api/DDLServices/GetStates"
